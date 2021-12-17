@@ -15,20 +15,20 @@ import Connect from './pages/Connect';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/portfolio">
         <Container fixed>
           <nav>
-            <Link className="Category" to="/portfolio">Home</Link> |{" "}
-            <Link className="Category" to="/portfolio/study">Projects</Link> |{" "}
-            <Link className="Category" to="/portfolio/projects">Resume</Link> |{" "}
-            <Link className="Category" to="/portfolio/connect">Connect</Link>
+            <Link className="Category" to="/">Home</Link> |{" "}
+            <Link className="Category" to="/study">Projects</Link> |{" "}
+            <Link className="Category" to="/projects">Resume</Link> |{" "}
+            <Link className="Category" to="/connect">Connect</Link>
           </nav>
         </Container>
         <Routes>
-          <Route path='/portfolio' element={<Main />} />
-          <Route path='/portfolio/study' element={<Study />} />
-          <Route path='/portfolio/projects' element={<Project />} />
-          <Route path='/portfolio/connect' element={<Connect />} />
+          <Route path='/' element={<Main />} />
+          <Route path='/study' element={<Study />} />
+          <Route path='/projects' element={<Project />} />
+          <Route path='/connect' element={<Connect />} />
         </Routes>
       </Router>
       <CssBaseline />
