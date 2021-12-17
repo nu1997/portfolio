@@ -18,17 +18,17 @@ function App() {
       <Router>
         <Container fixed>
           <nav>
-            <Link className="Category" to="/">Home</Link> |{" "}
-            <Link className="Category" to="/projects">Projects</Link> |{" "}
-            <Link className="Category" to="/study">Resume</Link> |{" "}
-            <Link className="Category" to="/connect">Connect</Link>
+            <Link className="Category" to="/portfolio">Home</Link> |{" "}
+            <Link className="Category" to="/portfolio/study">Projects</Link> |{" "}
+            <Link className="Category" to="/portfolio/projects">Resume</Link> |{" "}
+            <Link className="Category" to="/portfolio/connect">Connect</Link>
           </nav>
         </Container>
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/study' element={<Study />} />
-          <Route path='/projects' element={<Project />} />
-          <Route path='/connect' element={<Connect />} />
+          <Route path='/portfolio' element={<Main />} />
+          <Route path='/portfolio/study' element={<Study />} />
+          <Route path='/portfolio/projects' element={<Project />} />
+          <Route path='/portfolio/connect' element={<Connect />} />
         </Routes>
       </Router>
       <CssBaseline />
