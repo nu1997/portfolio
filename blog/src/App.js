@@ -8,7 +8,7 @@ import Container from '@mui/material/Container';
 
 // Pages
 import Main from './Pages/Main.jsx';
-import Study from './Pages/Study.jsx';
+import Resume from './Pages/Resume.jsx';
 import Project from './Pages/Project.jsx';
 import Connect from './Pages/Connect';
 
@@ -19,14 +19,14 @@ function App() {
         <Container fixed>
           <nav>
             <Link className="Category" to="/">Home</Link> |{" "}
-            <Link className="Category" to="/study">Resumé</Link> |{" "}
             <Link className="Category" to="/projects">Projects</Link> |{" "}
+            <Link className="Category" to="/resume">Resumé</Link> |{" "}
             <Link className="Category" to="/connect">Connect</Link>
           </nav>
         </Container>
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/study' element={<Study />} />
+          <Route path='/resume' element={<Resume />} />
           <Route path='/projects' element={<Project />} />
           <Route path='/connect' element={<Connect />} />
         </Routes>
