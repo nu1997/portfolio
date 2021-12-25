@@ -16,14 +16,12 @@ function App() {
   return (
     <div className="App">
       <Router basename="/portfolio">
-        <Container fixed>
-          <nav>
-            <Link className="Category" to="/">Home</Link> |{" "}
-            <Link className="Category" to="/projects">Projects</Link> |{" "}
-            <Link className="Category" to="/resume">Resumé</Link> |{" "}
-            <Link className="Category" to="/connect">Connect</Link>
-          </nav>
-        </Container>
+        <nav className="Navbar">
+          <Link className="Category" to="/">Home</Link> |{" "}
+          <Link className="Category" to="/projects">Projects</Link> |{" "}
+          <Link className="Category" to="/resume">Resumé</Link> |{" "}
+          <Link className="Category" to="/connect">Connect</Link>
+        </nav>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/resume' element={<Resume />} />
