@@ -1,0 +1,41 @@
+.project-tab {
+  border-top: 2px solid black;
+  display: none;
+  padding: 20px 0 0;
+  text-align: center;
+}
+.project-tablabel {
+  border: 1px solid transparent;
+  color: gray;
+  display: inline-flex;
+  font-weight: 600;
+  margin: 0 0 0px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.project-tablabel:hover {
+  color: white;
+  text-decoration: wavy;
+  cursor: pointer;
+}
+.project-tabradio {
+  display: none;
+}
+.project-tabradio:checked + .project-tablabel {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  /* border-bottom: 2px solid ; */
+  border-top: 2px solid black;
+  color: white;
+}
+#tab-refreci:checked ~ #content-refreci,
+#tab-onair:checked ~ #content-onair,
+#tab-gogung:checked ~ #content-gogung {
+  display: block;
+}
+.tab-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  /* min-width: 1000px; */
+  margin-top: 60px;
+}

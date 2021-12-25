@@ -1,8 +1,7 @@
-const Main = () => {
+export default function Main () {
   return (
     <div>
+      Main Homepage
     </div>
   )
-}
-
-export default Main;
+};
