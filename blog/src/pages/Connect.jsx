@@ -2,9 +2,9 @@
 export default function Connect() {
   return (
     <div>
-      <div className="resume-title">
+      {/* <div className="resume-title">
         Connect
-      </div>
+      </div> */}
       <div className="resume-content">
         <div className="resume-content-left">
           <img src="" alt="" />

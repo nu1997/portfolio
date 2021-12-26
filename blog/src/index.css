@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: 'KoPubWorld';
+  font-style: normal;
+  font-weight: Light;
+  src: url(./styles/font/KoPubWorld-Dotum-Light.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'KoPubWorld';
+  font-style: normal;
+  font-weight: Medium;
+  src: url(./styles/font/KoPubWorld-Dotum-Medium.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'KoPubWorld';
+  font-style: normal;
+  font-weight: Bold;
+  src: url(./styles/font/KoPubWorld-Dotum-Bold.ttf) format('truetype')
+}

@@ -33,7 +33,7 @@ export default function Project() {
           <TabList 
             onChange={handleChange}
             aria-label="project tabs"
-            textColor="black"
+            textColor="secondary"
             indicatorColor="secondary"
           >
             <Tab label="Ref:Reci" value="1" />
