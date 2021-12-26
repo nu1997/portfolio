@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cc85b4ab.css",
-    "main.js": "/portfolio/static/js/main.1b3d698c.js",
+    "main.css": "/portfolio/static/css/main.b4edfea9.css",
+    "main.js": "/portfolio/static/js/main.699371c0.js",
     "static/js/787.a10bb3b7.chunk.js": "/portfolio/static/js/787.a10bb3b7.chunk.js",
+    "static/media/KoPubWorld-Dotum-Light.ttf": "/portfolio/static/media/KoPubWorld-Dotum-Light.03520c7da00bc3085f28.ttf",
+    "static/media/KoPubWorld-Dotum-Medium.ttf": "/portfolio/static/media/KoPubWorld-Dotum-Medium.d4663cd37ec26b26240e.ttf",
+    "static/media/KoPubWorld-Dotum-Bold.ttf": "/portfolio/static/media/KoPubWorld-Dotum-Bold.7204e975c22b973d429c.ttf",
     "index.html": "/portfolio/index.html",
-    "main.cc85b4ab.css.map": "/portfolio/static/css/main.cc85b4ab.css.map",
-    "main.1b3d698c.js.map": "/portfolio/static/js/main.1b3d698c.js.map",
+    "main.b4edfea9.css.map": "/portfolio/static/css/main.b4edfea9.css.map",
+    "main.699371c0.js.map": "/portfolio/static/js/main.699371c0.js.map",
     "787.a10bb3b7.chunk.js.map": "/portfolio/static/js/787.a10bb3b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc85b4ab.css",
-    "static/js/main.1b3d698c.js"
+    "static/css/main.b4edfea9.css",
+    "static/js/main.699371c0.js"
   ]
 }
