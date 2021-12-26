@@ -1,45 +1,56 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
+
 import Box from '@mui/material/Box';
+import TabContext from '@mui/lab/TabContext';
+import Tab from '@mui/material/Tab';
+import TabPanel from '@mui/lab/TabPanel';
+import TabList from '@mui/lab/TabList';
+
+
 import RefReci from '../Components/RefReci';
 import Gogung from '../Components/GoGung';
 import OnAir from '../Components/OnAir';
 import { useState } from 'react';
-import './Project.css';
+// import './Project.css';
 
 
 export default function Project() {
-  const [selected, setSelected] = useState();
+  const [value, setValue] = useState("1");
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const tabstyle = {
+    display: "flex",
+    justifyContent: "end",
+    padding: "10px"
+  }
   return (
-    <div class="tab-container">
-      <input class="project-tabradio" id="tab-refreci" type="radio" name="tab-check" checked />
-      <label class="project-tablabel" for="tab-refreci">Ref : Reci</label>
-      <input class="project-tabradio" id="tab-onair" type="radio" name="tab-check" />
-      <label class="project-tablabel" for="tab-onair">On Air</label>
-      <input class="project-tabradio" id="tab-gogung" type="radio" name="tab-check" />
-      <label class="project-tablabel" for="tab-gogung">GoGung VR</label>
-      <section class="project-tab" id="content-refreci">
-        <div
-        >
+    <div>
+      <TabContext value={value}>
+        <Box style = {tabstyle} className="Tabcontainer">
+          <TabList 
+            onChange={handleChange}
+            aria-label="project tabs"
+            textColor="black"
+            indicatorColor="secondary"
+          >
+            <Tab label="Ref:Reci" value="1" />
+            <Tab label="On Air" value="2" />
+            <Tab label="GoGung VR" value="3" />
+          </TabList> 
+        </Box>
+        <TabPanel value="1">
           <RefReci />
-        </div>
-      </section>
-      <section class="project-tab" id="content-onair">
-        <div
-        >
+        </TabPanel>
+        <TabPanel value="2">
           <OnAir />
-        </div>
-      </section>
-      <section class="project-tab" id="content-gogung">
-        <div
-        >
+        </TabPanel>
+        <TabPanel value="3">
           <Gogung />
-        </div>
-      </section>
+        </TabPanel>
+      </TabContext>
     </div>
   );
 }
