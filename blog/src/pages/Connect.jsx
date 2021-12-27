@@ -1,43 +1,41 @@
 import * as React from 'react';
+import { Typography } from '@mui/material';
+
+import './Connect.css'
 
 export default function Connect() {
 
-  const contentStyle = {
-    display: "flex",
-    justifyContent: "end",
-    alignItems: "center",
-    textAlign: "right",
-    minHeight: "550px",
-    padding: "20px"
-  }
-
-  const backgroundStyle = {
-    backgroundImage: "url(/images/connect/000021.JPG)",
-    backgroundSize: "cover"
-  }
-
   return (
     <div>
-      {/* <div className="resume-title">
-        Connect
-      </div> */}
-      <div style={backgroundStyle}>
-        {/* <div>
-          <img src="/images/connect/000021.JPG" alt="profile" style={imgStyle}/>
-        </div> */}
-        <div style={contentStyle}>
+      <div className="connect-background-img">
+        <div className="connect-content">
           <div>
             <div>
-              <p>Jiu Park</p>
+              <Typography variant="h1" className="nameText">Jiu Park</Typography>
             </div>
             <div>
-              <p>Web Developer</p>
+              <Typography variant="subtitle1" className="jobText">Web Developer</Typography>
             </div>
             <div>
-              <p>Seoul, South Korea</p>
+              <Typography variant="body1" className="locText">Seoul, South Korea</Typography>
             </div>
-            <p>Contact via <a href="mailto:jiwooapark@gmail.com">jiwooapark@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/park-jiwoo-411a86214/" target="_blank" rel="noreferrer">LinkedIn</a> | <a href="https://github.com/nu1997" target="_blank" rel="noreferrer">Github</a></p>
+            <Typography variant="body2" className="contactText">Contact via{" "}
+              <a className="hyperText" href="mailto:jiwooapark@gmail.com">jiwooapark@gmail.com</a>
+            </Typography>
+            <Typography variant="body1" className="infoText">
+              <a 
+                className="hyperText" 
+                href="https://www.linkedin.com/in/park-jiwoo-411a86214/" 
+                target="_blank" 
+                rel="noreferrer"
+              >LinkedIn</a> |{" "}
+              <a
+                className="hyperText"
+                href="https://github.com/nu1997" 
+                target="_blank" 
+                rel="noreferrer"
+              >Github</a>
+            </Typography>
           </div>
         </div>
       </div>

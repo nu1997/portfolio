@@ -1,0 +1,57 @@
+.nameText {
+  color: white;
+  font-family: "KoPubWorld";
+  font-weight: bold;
+}
+
+.locText {
+  color: ghostwhite;
+  font-family: "KoPubWorld";
+}
+
+.jobText {
+  color: black;
+  font-family: "KoPubWorld";
+  font-weight: bold;
+}
+
+.contactText {
+  color: ghostwhite;
+  font-family: "KoPubWorld";
+}
+
+.hyperText {
+  text-decoration: none;
+  color: plum;
+  font-family: "KoPubWorld";
+  font-weight: bold;
+  /* color: darkolivegreen; */
+}
+
+.info-text {
+  color: ghostwhite;
+  font-family: "KoPubWorld";
+}
+
+.connect-background-img {
+  height: 100vh;
+  background-image: url("https://nu1997.github.io/portfolio/images/connect/000021.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-color: darkolivegreen;
+  /* width: 100vw; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+.connect-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  /* min-width: none; */
+  /* min-width: 100vw; */
+  min-height: 100vh;
+  padding: 20px;
+}

@@ -17,19 +17,19 @@ code {
   font-family: 'KoPubWorld';
   font-style: normal;
   font-weight: Light;
-  src: url(./styles/font/KoPubWorld-Dotum-Light.ttf) format('truetype')
+  src: url(../src/styles/font/KoPubWorld-Dotum-Light.ttf) format('truetype')
 }
 
 @font-face {
   font-family: 'KoPubWorld';
   font-style: normal;
   font-weight: Medium;
-  src: url(./styles/font/KoPubWorld-Dotum-Medium.ttf) format('truetype')
+  src: url(../src/styles/font/KoPubWorld-Dotum-Medium.ttf) format('truetype')
 }
 
 @font-face {
   font-family: 'KoPubWorld';
   font-style: normal;
   font-weight: Bold;
-  src: url(./styles/font/KoPubWorld-Dotum-Bold.ttf) format('truetype')
+  src: url(../src/styles/font/KoPubWorld-Dotum-Bold.ttf) format('truetype')
 }

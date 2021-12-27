@@ -3,6 +3,7 @@
   background-color: darkolivegreen;
   /* background-size: cover; */
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .Category {
