@@ -10,6 +10,7 @@
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  user-select: none;
   padding: 5px;
 }
 

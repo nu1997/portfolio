@@ -1,0 +1,16 @@
+.main-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  /* grid-auto-rows: auto; */
+  margin-top: 50px;
+}
+.main-content-left {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.main-content-right {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}

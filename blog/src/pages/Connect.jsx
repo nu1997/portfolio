@@ -11,26 +11,26 @@ export default function Connect() {
         <div className="connect-content">
           <div>
             <div>
-              <Typography variant="h1" className="nameText">Jiu Park</Typography>
+              <Typography variant="h1" className="name-text">Jiu Park</Typography>
             </div>
             <div>
-              <Typography variant="subtitle1" className="jobText">Web Developer</Typography>
+              <Typography variant="subtitle1" className="job-text">Web Developer</Typography>
             </div>
             <div>
-              <Typography variant="body1" className="locText">Seoul, South Korea</Typography>
+              <Typography variant="body1" className="loc-text">Seoul, South Korea</Typography>
             </div>
-            <Typography variant="body2" className="contactText">Contact via{" "}
-              <a className="hyperText" href="mailto:jiwooapark@gmail.com">jiwooapark@gmail.com</a>
+            <Typography variant="body2" className="contact-text">Contact via{" "}
+              <a className="hyper-text" href="mailto:jiwooapark@gmail.com">jiwooapark@gmail.com</a>
             </Typography>
-            <Typography variant="body1" className="infoText">
+            <Typography variant="body1" className="info-text">
               <a 
-                className="hyperText" 
+                className="hyper-text" 
                 href="https://www.linkedin.com/in/park-jiwoo-411a86214/" 
                 target="_blank" 
                 rel="noreferrer"
               >LinkedIn</a> |{" "}
               <a
-                className="hyperText"
+                className="hyper-text"
                 href="https://github.com/nu1997" 
                 target="_blank" 
                 rel="noreferrer"

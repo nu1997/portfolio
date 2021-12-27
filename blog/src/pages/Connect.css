@@ -1,26 +1,26 @@
-.nameText {
+.name-text {
   color: white;
   font-family: "KoPubWorld";
   font-weight: bold;
 }
 
-.locText {
+.loc-text {
   color: ghostwhite;
   font-family: "KoPubWorld";
 }
 
-.jobText {
+.job-text {
   color: black;
   font-family: "KoPubWorld";
   font-weight: bold;
 }
 
-.contactText {
+.contact-text {
   color: ghostwhite;
   font-family: "KoPubWorld";
 }
 
-.hyperText {
+.hyper-text {
   text-decoration: none;
   color: plum;
   font-family: "KoPubWorld";
