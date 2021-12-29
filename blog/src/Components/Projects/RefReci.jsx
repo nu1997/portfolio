@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
+  image: {
+    width: '200px',
+  },
   imageList: {
     flexWrap: 'nowrap',
     transform: 'translateZ(0)',
@@ -33,7 +36,41 @@ const useStyles = makeStyles((theme) => ({
 export default function RefReci () {
   const classes = useStyles();
   
-  const url = 'https://nu1997.github.io/portfolio/';
+  const url = 'https://nu1997.github.io/portfolio/images/project/refreci/';
+  
+  const itemData = [
+    {
+      img: '1',
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: '2',
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: '3',
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: '4',
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: '5',
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: '6',
+      title: 'Image',
+      author: 'author',
+    }
+  ];
+
   const imgNum = 6
   const imgRender = () => {
     const imgRendered = [];
@@ -61,9 +98,26 @@ export default function RefReci () {
     <div>
       ref:reci
       <div className={classes.root}>
-        <ImageList className={classes.imageList}>
-          {imgRender()}
-        </ImageList>
+        {/* <ImageList className={classes.imageList}>
+          // {imgRender()}
+        </ImageList> */}
+
+        <div className={classes.root}>
+          <ImageList className={classes.imageList} cols={5}>
+            {itemData.map((item) => (
+              <ImageListItem key={`${url}ref-${item.img}.png`}>
+                <img src={`${url}ref-${item.img}.png`} alt={item.title} className={classes.image}/>
+                <ImageListItemBar
+                  title={item.title}
+                  classes={{
+                    root: classes.titleBar,
+                    title: classes.title,
+                  }}
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </div>
       </div>
     </div>
   )
