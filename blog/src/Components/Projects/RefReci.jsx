@@ -5,6 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 import { makeStyles } from '@mui/styles';
 
+import SlideSample from './SlideSample';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -118,6 +120,9 @@ export default function RefReci () {
             ))}
           </ImageList>
         </div>
+      </div>
+      <div>
+        <SlideSample />
       </div>
     </div>
   )
